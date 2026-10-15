@@ -1,0 +1,58 @@
+# Model checkpoints and generated model artifacts
+accuracy/setup/skewing_matrix/
+models/
+checkpoints/
+weights/
+offload_dir/
+accuracy/h2o_model/
+accuracy/setup/opt-model/
+accuracy/setup/opt-model-no-skew/
+accuracy/setup/weights/
+accuracy/setup/weights-no-skew/
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.safetensors
+**/*.ckpt
+
+# Evaluation outputs, large traces, and generated prompt/result files
+*.jsonl
+*.csv
+*.log
+*.npy
+*.npz
+accuracy/perplexity/ptb.test.txt
+**/pg19_firstbook.txt
+accuracy/lm_eval/results/
+accuracy/lm_eval/prefetch_*.csv
+accuracy/perplexity/*_results.jsonl
+accuracy/perplexity/humaneval_samples.jsonl
+accuracy/perplexity/pg19_proxy_test.txt
+
+# Vendored third-party source trees and build metadata
+accuracy/transformers/
+**/*.egg-info/
+
+# Python and local build caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.so
+build/
+dist/
+
+# Local environment and editor files
+.aws/
+.codex/
+.agents/
+.env.*
+*.pem
+*.key
+.venv/
+venv/
+env/
+.env
+.DS_Store
+*.swp
