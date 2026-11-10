@@ -1,0 +1,56 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:05<00:11,  5.81s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:11<00:05,  5.92s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:15<00:00,  4.79s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:15<00:00,  5.08s/it]
+{
+  "complete": true,
+  "memory": {
+    "before_generation": {
+      "allocated_bytes": 25715499008,
+      "reserved_bytes": 39554383872,
+      "peak_allocated_bytes": 31820064256,
+      "peak_reserved_bytes": 39554383872
+    },
+    "prefill": {
+      "allocated_bytes": 27599135232,
+      "reserved_bytes": 39554383872,
+      "peak_allocated_bytes": 27713036288,
+      "peak_reserved_bytes": 39554383872
+    },
+    "decode": {
+      "allocated_bytes": 29693433344,
+      "reserved_bytes": 39554383872,
+      "peak_allocated_bytes": 31820064256,
+      "peak_reserved_bytes": 39554383872
+    },
+    "peak_allocated_bytes": 31820064256,
+    "peak_reserved_bytes": 39554383872,
+    "cpu_process_peak_rss_bytes": 31957364736,
+    "scope": "PyTorch allocator on the sole visible GPU; includes resident weights and buffers. Peaks reset after warmup and at the prefill/decode boundary. Reserved memory retains warmup allocator blocks; CUDA context/non-PyTorch memory is not included. Memory-run timing is supplementary; historical throughput is preserved."
+  },
+  "memory_source_sha256": {
+    "/home/liushenyu/infinigen/speedup/run_quest_native_cached_v8.py": "8c77c1516d43da77ea3d6e445b876819cd4194eac120f37505eb1b987e80f1b8",
+    "/home/liushenyu/infinigen/speedup/run_quest_memory_v9.py": "66832c465677face5099f3657a0ec6bcbed86850f3f16ac067fc2b38953f024c"
+  },
+  "memory_note": "One full warmup and one measured run; accepted v8 algorithm unchanged.",
+  "method": "quest_capped",
+  "runtime": "Transformers OPT cached-decode adaptation; full GPU KV, not official Quest paging runtime",
+  "gpu": 3,
+  "model": "OPT-13B",
+  "precision": "FP16",
+  "prompt_len": 512,
+  "generation_len": 128,
+  "batch_size": 4,
+  "prefill_s": 0.41853676619939506,
+  "decode_s": 6.770492383977398,
+  "total_s": 7.189596219919622,
+  "decode_tokens_per_s": 75.03147056220008,
+  "end_to_end_tokens_per_s": 71.21401318497468,
+  "selection_density": 0.3007846675415573,
+  "parameters": {
+    "page_size": 16,
+    "minimum_pages": 3,
+    "variant": "capped",
+    "token_budget_ratio": 0.3,
+    "first_two_layers_full": false,
+    "recent_union": false
+  },
+  "note": "Prefill is full causal. Decode applies Quest page bounds independently per head; capped uses a strict ceil(0.30 * visible_length) token budget."
+}

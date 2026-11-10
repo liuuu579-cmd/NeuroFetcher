@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "real": false,
+  "checks": {
+    "existing_checks": {
+      "full_gpu_max_reference_error": 0.00067138671875,
+      "full_offload_max_reference_error": 0.000732421875,
+      "serial_async_max_error": 0.0,
+      "all_history_async_max_reference_error": 0.000732421875,
+      "carry_entries": 98,
+      "distinct_batch_items": true,
+      "free_decode_identical": true,
+      "passed": true
+    },
+    "all_ties_adaptive_growth": {
+      "original_neural_serial": {
+        "peak_allocated_bytes": 27878400,
+        "gpu_staging_bytes": 261632,
+        "actual_history_selection_ratio": 1.0
+      },
+      "original_neural_async": {
+        "peak_allocated_bytes": 28140032,
+        "gpu_staging_bytes": 523264,
+        "actual_history_selection_ratio": 1.0
+      },
+      "compact_neural_serial": {
+        "peak_allocated_bytes": 27776000,
+        "gpu_staging_bytes": 254464,
+        "actual_history_selection_ratio": 1.0,
+        "staging_growths": [
+          {
+            "previous": 42,
+            "capacity": 64,
+            "history": 64
+          },
+          {
+            "previous": 64,
+            "capacity": 65,
+            "history": 65
+          },
+          {
+            "previous": 65,
+            "capacity": 66,
+            "history": 66
+          },
+          {
+            "previous": 66,
+            "capacity": 67,
+            "history": 67
+          },
+          {
+            "previous": 67,
+            "capacity": 68,
+            "history": 68
+          },
+          {
+            "previous": 68,
+            "capacity": 69,
+            "history": 69
+          },
+          {
+            "previous": 69,
+            "capacity": 70,
+            "history": 70
+          },
+          {
+            "previous": 70,
+            "capacity": 71,
+            "history": 71
+          }
+        ]
+      },
+      "compact_neural_async": {
+        "peak_allocated_bytes": 28065280,
+        "gpu_staging_bytes": 505344,
+        "actual_history_selection_ratio": 1.0,
+        "staging_growths": [
+          {
+            "previous": 42,
+            "capacity": 64,
+            "history": 64
+          },
+          {
+            "previous": 42,
+            "capacity": 65,
+            "history": 65
+          },
+          {
+            "previous": 64,
+            "capacity": 66,
+            "history": 66
+          },
+          {
+            "previous": 65,
+            "capacity": 67,
+            "history": 67
+          },
+          {
+            "previous": 66,
+            "capacity": 68,
+            "history": 68
+          },
+          {
+            "previous": 67,
+            "capacity": 69,
+            "history": 69
+          },
+          {
+            "previous": 68,
+            "capacity": 70,
+            "history": 70
+          },
+          {
+            "previous": 69,
+            "capacity": 71,
+            "history": 71
+          }
+        ]
+      },
+      "all_logits_bitwise_equal": true,
+      "all_index_hashes_equal": true
+    }
+  }
+}

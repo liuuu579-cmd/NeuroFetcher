@@ -1,0 +1,25 @@
+{
+  "contexts": [
+    512
+  ],
+  "generation_len": 4,
+  "batch": 1,
+  "purpose": "Supplementary memory measurements, no existing results replaced",
+  "lanes": {
+    "2": {
+      "cores": "20-29",
+      "methods": [
+        "flexgen",
+        "infinigen"
+      ]
+    },
+    "3": {
+      "cores": "30-39",
+      "methods": [
+        "h2o",
+        "quest_native",
+        "quest_capped"
+      ]
+    }
+  }
+}

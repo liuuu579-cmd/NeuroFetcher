@@ -1,0 +1,17 @@
+{
+  "model": "OPT-13B",
+  "model_path": "/home/liushenyu/opt-13b",
+  "tokenizer_path": "/home/liushenyu/opt-13b",
+  "tasks": ["openbookqa", "winogrande", "copa", "rte"],
+  "shots": 5,
+  "strategies": ["full", "previous_step", "oracle"],
+  "budget_ratios": [0.30, 0.20, 0.15, 0.08],
+  "max_length": 2048,
+  "batch_size": 1,
+  "recent_window": 1,
+  "dtype": "float16",
+  "visible_gpus": [0, 1, 2, 3],
+  "cpu_threads": 42,
+  "oracle_definition": "Current-step true attention top-k under the matched budget; quality upper bound, not implementable.",
+  "previous_step_definition": "Reuse the preceding query's selected KV indices, force-keep the newly available key, and match the current top-k budget."
+}

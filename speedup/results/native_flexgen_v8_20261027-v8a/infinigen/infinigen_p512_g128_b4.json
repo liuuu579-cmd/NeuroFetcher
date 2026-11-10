@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "method": "infinigen",
+  "runtime": "original FlexGen method-specific runtime",
+  "gpu": 2,
+  "model": "OPT-13B",
+  "model_path": "/home/liushenyu/opt-13b",
+  "precision": "FP16",
+  "prompt_len": 512,
+  "generation_len": 128,
+  "batch_size": 4,
+  "elapsed_wall_s": 38.49355862289667,
+  "prefill_s": 0.5306791148614138,
+  "decode_s": 21.551625366555527,
+  "total_s": 22.08230448141694,
+  "decode_tokens_per_s": 23.571308027111957,
+  "end_to_end_tokens_per_s": 23.185985884347648,
+  "parameters": {
+    "alpha": 7,
+    "partial_weight_ratio": 0.3,
+    "max_num_kv": 193,
+    "source": "/home/liushenyu/opt-13b-flexgen-np"
+  },
+  "note": "Metrics use the native FlexGen generate timer after warmup."
+}

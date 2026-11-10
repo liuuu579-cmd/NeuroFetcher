@@ -1,0 +1,28 @@
+{
+  "method": "native FlexGen",
+  "gpu": 3,
+  "repeats": 5,
+  "decode_tokens_per_s": [
+    5.336262959469498,
+    5.590606787953745,
+    5.621824341988208,
+    5.887270417334982,
+    5.507464120739974
+  ],
+  "mean_decode_tokens_per_s": 5.588685725497282,
+  "peak_allocated_gib": [
+    27.31027126312256,
+    27.31027126312256,
+    27.31027126312256,
+    27.31027126312256,
+    27.31027126312256
+  ],
+  "mean_peak_allocated_gib": 27.31027126312256,
+  "sources": [
+    "/home/liushenyu/infinigen/speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat1.json",
+    "/home/liushenyu/infinigen/speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat2.json",
+    "/home/liushenyu/infinigen/speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat3.json",
+    "/home/liushenyu/infinigen/speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat4.json",
+    "/home/liushenyu/infinigen/speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat5.json"
+  ]
+}

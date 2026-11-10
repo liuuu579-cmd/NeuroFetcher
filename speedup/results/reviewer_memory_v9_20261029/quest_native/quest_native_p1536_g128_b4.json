@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "memory": {
+    "before_generation": {
+      "allocated_bytes": 25715564544,
+      "reserved_bytes": 42542825472,
+      "peak_allocated_bytes": 42353563136,
+      "peak_reserved_bytes": 50306482176
+    },
+    "prefill": {
+      "allocated_bytes": 31366472192,
+      "reserved_bytes": 42542825472,
+      "peak_allocated_bytes": 32737878016,
+      "peak_reserved_bytes": 42542825472
+    },
+    "decode": {
+      "allocated_bytes": 36816246272,
+      "reserved_bytes": 43819991040,
+      "peak_allocated_bytes": 42352563712,
+      "peak_reserved_bytes": 43819991040
+    },
+    "peak_allocated_bytes": 42352563712,
+    "peak_reserved_bytes": 43819991040,
+    "cpu_process_peak_rss_bytes": 31958118400,
+    "scope": "PyTorch allocator on the sole visible GPU; includes resident weights and buffers. Peaks reset after warmup and at the prefill/decode boundary. Reserved memory retains warmup allocator blocks; CUDA context/non-PyTorch memory is not included. Memory-run timing is supplementary; historical throughput is preserved."
+  },
+  "memory_source_sha256": {
+    "/home/liushenyu/infinigen/speedup/run_quest_native_cached_v8.py": "8c77c1516d43da77ea3d6e445b876819cd4194eac120f37505eb1b987e80f1b8",
+    "/home/liushenyu/infinigen/speedup/run_quest_memory_v9.py": "66832c465677face5099f3657a0ec6bcbed86850f3f16ac067fc2b38953f024c"
+  },
+  "memory_note": "One full warmup and one measured run; accepted v8 algorithm unchanged.",
+  "method": "quest_native",
+  "runtime": "Transformers OPT cached-decode adaptation; full GPU KV, not official Quest paging runtime",
+  "gpu": 3,
+  "model": "OPT-13B",
+  "precision": "FP16",
+  "prompt_len": 1536,
+  "generation_len": 128,
+  "batch_size": 4,
+  "prefill_s": 1.4843813229817897,
+  "decode_s": 8.894002079032362,
+  "total_s": 10.37901989906095,
+  "decode_tokens_per_s": 57.117144282843334,
+  "end_to_end_tokens_per_s": 49.33028407107338,
+  "selection_density": 0.3263010549950787,
+  "parameters": {
+    "page_size": 16,
+    "minimum_pages": 3,
+    "variant": "native",
+    "token_budget_ratio": null,
+    "first_two_layers_full": true,
+    "recent_union": false
+  },
+  "note": "Prefill is full causal. Decode applies Quest page bounds independently per head."
+}

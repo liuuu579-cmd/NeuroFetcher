@@ -1,0 +1,13 @@
+task,strategy,index_scope,budget_ratio,recent_window,requests,actual_budget_ratio,stem,embedding_mode,acc,acc_norm
+copa,oracle,per_head,0.3,20,200,0.5386232860021237,copa-5-opt-13b-oracle-per_head-b0p3-r20,,0.8,
+copa,oracle,shared,0.3,20,200,0.5169029052195933,copa-5-opt-13b-oracle-shared-b0p3-r20,,0.78,
+openbookqa,oracle,per_head,0.3,20,2000,0.5087996400178785,openbookqa-5-opt-13b-oracle-per_head-b0p3-r20,,0.414,0.446
+openbookqa,oracle,shared,0.3,20,2000,0.48474648328381237,openbookqa-5-opt-13b-oracle-shared-b0p3-r20,,0.426,0.452
+rte,oracle,per_head,0.3,20,554,0.3355753243942367,rte-5-opt-13b-oracle-per_head-b0p3-r20,,0.5126353790613718,
+rte,oracle,shared,0.3,20,554,0.32260598909210897,rte-5-opt-13b-oracle-shared-b0p3-r20,,0.4981949458483754,
+winogrande,full,shared,0.3,20,2534,1.0,winogrande-5-opt-13b-full-shared-b0p3-r20,,0.6827150749802684,
+winogrande,neural,shared,0.3,20,2534,0.45937030840679477,winogrande-5-opt-13b-neural-shared-b0p3-r20-embedding-restored,restore,0.6669297553275454,
+winogrande,neural,shared,0.3,20,2534,0.4478291759524941,winogrande-5-opt-13b-neural-shared-b0p3-r20,,0.5146014206787688,
+winogrande,oracle,per_head,0.3,20,2534,0.4549923043279912,winogrande-5-opt-13b-oracle-per_head-b0p3-r20,,0.6842936069455406,
+winogrande,oracle,shared,0.3,20,2534,0.430750150913798,winogrande-5-opt-13b-oracle-shared-b0p3-r20,,0.664561957379637,
+winogrande,previous_step,shared,0.3,20,2534,0.4340726512254453,winogrande-5-opt-13b-previous_step-shared-b0p3-r20,,0.6661404893449092,

@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "method": "h2o",
+  "runtime": "H2O FlexGen runtime with decode-cache length adapter",
+  "gpu": 3,
+  "model": "OPT-13B",
+  "model_path": "/home/liushenyu/opt-13b",
+  "precision": "FP16",
+  "prompt_len": 1024,
+  "generation_len": 128,
+  "batch_size": 4,
+  "elapsed_wall_s": 110.31958706700243,
+  "prefill_s": 0.8300442020408809,
+  "decode_s": 86.37655998766422,
+  "total_s": 87.2066041897051,
+  "decode_tokens_per_s": 5.881225185079719,
+  "end_to_end_tokens_per_s": 5.871114977556282,
+  "parameters": {
+    "heavy_ratio": 0.15,
+    "native_recent_policy": true,
+    "first_two_layers_full": true
+  },
+  "note": "Metrics use the native FlexGen generate timer after warmup."
+}

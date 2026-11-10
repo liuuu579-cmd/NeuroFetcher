@@ -1,0 +1,217 @@
+{
+  "complete": true,
+  "all_validation_bitwise_equal": true,
+  "manifest": {
+    "protocol": "balanced adjacent A/B, B/A pairs in one common-model process",
+    "initial_gpu_state": {
+      "timestamp_utc": "2026-11-02T01:31:33.955930+00:00",
+      "gpu": "3, GPU-ba7178a1-5589-6027-eb47-28727d296893, 2 MiB, 0 %, 40, 210 MHz, 405 MHz, 34.90 W",
+      "compute_processes": [
+        "GPU-38c83f4f-d558-ec8d-327c-444fffe1352c, 2717768, 19338 MiB",
+        "GPU-87c74231-f0a4-917d-e639-161adb00b528, 1281637, 8476 MiB"
+      ],
+      "load_average": [
+        3.93115234375,
+        4.09765625,
+        4.19970703125
+      ]
+    },
+    "model_path": "/home/liushenyu/opt-13b",
+    "predictor_path": "/home/liushenyu/test/predictor_topk_0.3_iwl_epoch_20.pth",
+    "embedding_path": "/home/liushenyu/test/opt_13b_embed_weights.pth",
+    "predictor_sha256": "05164ad4447ebdc004ff628670b5816c65ac893492168f0a8cf263408b62c8a2",
+    "embedding_sha256": "35ef78c9d4111b430759f14b8cecf5e52f936876ad87b09cb2d6839b4046985c",
+    "model_config_sha256": "2c94ede930d5788e00573e671da80cc836bf7006c03c69696fd0f9a9dbc5e14f",
+    "prompt_sha256": "b0a033d7819999458d797d9aed517a89a4917d0491cef6662f6c03f58c860907",
+    "seed": 20261026,
+    "predictor_config": {
+      "encoder_layers": 1,
+      "heads": 4,
+      "ffn": 2048,
+      "dtype": "float32"
+    },
+    "batch": 4,
+    "prompt_len": 1920,
+    "gen_len": 128,
+    "budget": 0.3,
+    "recent": 20,
+    "strategy": "neural_async",
+    "pairs": 6,
+    "cpu_affinity": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "cpu_threads": 10,
+    "torch_version": "2.0.1+cu117",
+    "allocator": "backend:cudaMallocAsync",
+    "source_sha256": {
+      "benchmark_layerwise_paired_v17.py": "b97e80d47360d02f71ebd327be408b0d514ee852a496c8f9402e7fb70a11dc9b",
+      "reviewer_offload_backend_v12.py": "6dc4e6b0ddb64bb36f39330424ca06e96a466e17cdd6e3bb740e4c3551a2174d",
+      "reviewer_offload_backend_v16.py": "7da4c3d7d7fe6ffda28e5ed760820616715641df2a25f739d0d71e91211f9df9"
+    }
+  },
+  "summary": {
+    "bulk_v12": {
+      "decode_tokens_per_s": {
+        "mean": 14.826817366643846,
+        "stdev": 0.14688685382119068
+      },
+      "decode_s": {
+        "mean": 34.2650422208632,
+        "stdev": 0.33923034573795585
+      },
+      "total_s": {
+        "mean": 39.682157586988374,
+        "stdev": 0.3263542593309986
+      },
+      "prefill_s": {
+        "mean": 5.417115366125169,
+        "stdev": 0.10169612931848852
+      },
+      "peak_allocated_bytes": {
+        "mean": 32047931253.333332,
+        "stdev": 66757625.45373175
+      },
+      "peak_reserved_bytes": {
+        "mean": 33118224384,
+        "stdev": 130819259.22435077
+      },
+      "gpu_staging_bytes": {
+        "mean": 4161536000,
+        "stdev": 0.0
+      },
+      "actual_history_selection_ratio": {
+        "mean": 0.3004079210692461,
+        "stdev": 0.0
+      },
+      "h2d_kv_bytes": {
+        "mean": 255652659200,
+        "stdev": 0.0
+      }
+    },
+    "layer_v16": {
+      "decode_tokens_per_s": {
+        "mean": 15.273226214712066,
+        "stdev": 0.0769187487648648
+      },
+      "decode_s": {
+        "mean": 33.261522059328854,
+        "stdev": 0.16772054198670228
+      },
+      "total_s": {
+        "mean": 38.69978448255764,
+        "stdev": 0.2127666500234533
+      },
+      "prefill_s": {
+        "mean": 5.438262423228783,
+        "stdev": 0.0730885094295887
+      },
+      "peak_allocated_bytes": {
+        "mean": 27990287508,
+        "stdev": 61649075.7908111
+      },
+      "peak_reserved_bytes": {
+        "mean": 29142024192,
+        "stdev": 121446649.93172258
+      },
+      "gpu_staging_bytes": {
+        "mean": 104038400,
+        "stdev": 0.0
+      },
+      "actual_history_selection_ratio": {
+        "mean": 0.3004079210692461,
+        "stdev": 0.0
+      },
+      "h2d_kv_bytes": {
+        "mean": 255652659200,
+        "stdev": 0.0
+      }
+    }
+  },
+  "pairs": [
+    {
+      "pair": 1,
+      "order": [
+        "bulk_v12",
+        "layer_v16"
+      ],
+      "bulk_tps": 14.86760840410898,
+      "layer_tps": 15.34211529623239,
+      "layer_divided_by_bulk": 1.0319154822501424,
+      "decode_time_saved_s": 1.0567685530986637,
+      "allocated_saved_gib": 3.7639771699905396
+    },
+    {
+      "pair": 2,
+      "order": [
+        "layer_v16",
+        "bulk_v12"
+      ],
+      "bulk_tps": 14.995498844014335,
+      "layer_tps": 15.256221524302246,
+      "layer_divided_by_bulk": 1.0173867293779282,
+      "decode_time_saved_s": 0.5789414180908352,
+      "allocated_saved_gib": 3.794624410569668
+    },
+    {
+      "pair": 3,
+      "order": [
+        "bulk_v12",
+        "layer_v16"
+      ],
+      "bulk_tps": 14.987335698206003,
+      "layer_tps": 15.166448912904503,
+      "layer_divided_by_bulk": 1.011950971026821,
+      "decode_time_saved_s": 0.400297611951828,
+      "allocated_saved_gib": 3.762969970703125
+    },
+    {
+      "pair": 4,
+      "order": [
+        "layer_v16",
+        "bulk_v12"
+      ],
+      "bulk_tps": 14.65578614027785,
+      "layer_tps": 15.311982950371215,
+      "layer_divided_by_bulk": 1.0447739073027251,
+      "decode_time_saved_s": 1.4854473769664764,
+      "allocated_saved_gib": 3.794685386121273
+    },
+    {
+      "pair": 5,
+      "order": [
+        "bulk_v12",
+        "layer_v16"
+      ],
+      "bulk_tps": 14.688924608155364,
+      "layer_tps": 15.20541960389083,
+      "layer_divided_by_bulk": 1.035162206186878,
+      "decode_time_saved_s": 1.1747390870004892,
+      "allocated_saved_gib": 3.762863263487816
+    },
+    {
+      "pair": 6,
+      "order": [
+        "layer_v16",
+        "bulk_v12"
+      ],
+      "bulk_tps": 14.765750505100545,
+      "layer_tps": 15.357169000571217,
+      "layer_divided_by_bulk": 1.040053398929257,
+      "decode_time_saved_s": 1.3249269220978022,
+      "allocated_saved_gib": 3.794731117784977
+    }
+  ],
+  "number_of_pairs_layer_faster": 6,
+  "ratio_of_mean_throughputs": 1.0301082044129386,
+  "median_paired_ratio": 1.0335388442185103,
+  "limitations": "One workload on shared host. Balances time/order on one GPU; compares entire staging implementations, not individual micro-causes."
+}

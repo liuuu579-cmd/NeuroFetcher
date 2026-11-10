@@ -1,0 +1,23 @@
+{
+  "start_utc": "2026-10-30T06:52:22.569753+00:00",
+  "model": "OPT-13B FP16",
+  "contexts": [
+    1920,
+    512,
+    1024,
+    1536
+  ],
+  "batch": 4,
+  "generation_len": 128,
+  "warmups": 1,
+  "repeats": 5,
+  "gpu2": {
+    "method": "neural_serial",
+    "cores": "20-29"
+  },
+  "gpu3": {
+    "method": "neural_async",
+    "cores": "30-39"
+  },
+  "change": "Compact adaptive staging; exact shared source embedding; cudaMallocAsync; request/prefill cache release; original predictor precision, selection and attention preserved"
+}

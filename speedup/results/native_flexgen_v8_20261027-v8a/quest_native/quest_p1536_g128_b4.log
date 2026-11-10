@@ -1,0 +1,25 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:06<00:13,  6.51s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:13<00:06,  6.52s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:17<00:00,  5.42s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:17<00:00,  5.72s/it]
+{
+  "complete": true,
+  "method": "quest_native",
+  "runtime": "Transformers OPT cached-decode adaptation; full GPU KV, not official Quest paging runtime",
+  "gpu": 3,
+  "model": "OPT-13B",
+  "precision": "FP16",
+  "prompt_len": 1536,
+  "generation_len": 128,
+  "batch_size": 4,
+  "prefill_s": 1.311601870926097,
+  "decode_s": 8.851701655890793,
+  "total_s": 10.16355265979655,
+  "decode_tokens_per_s": 57.390095119386096,
+  "end_to_end_tokens_per_s": 50.37608571905102,
+  "selection_density": 0.3263010549950787,
+  "parameters": {
+    "page_size": 16,
+    "minimum_pages": 3,
+    "first_two_layers_full": true,
+    "recent_union": false
+  },
+  "note": "Prefill is full causal. Decode applies Quest page bounds independently per head."
+}

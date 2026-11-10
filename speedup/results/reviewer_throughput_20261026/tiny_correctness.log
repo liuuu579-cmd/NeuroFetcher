@@ -1,0 +1,10 @@
+{
+  "full_gpu_max_reference_error": 0.00067138671875,
+  "full_offload_max_reference_error": 0.000732421875,
+  "serial_async_max_error": 0.0,
+  "all_history_async_max_reference_error": 0.000732421875,
+  "carry_entries": 98,
+  "distinct_batch_items": true,
+  "free_decode_identical": true,
+  "passed": true
+}

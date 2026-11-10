@@ -1,0 +1,9 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:07<00:15,  7.52s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:14<00:06,  7.00s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:18<00:00,  5.66s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:18<00:00,  6.07s/it]
+/home/liushenyu/anaconda3/envs/infinigen/lib/python3.9/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+{"iteration": 1, "total_s": 406.88747436599806, "decode_s": 401.33133005490527, "decode_tokens_per_s": 1.2657870491459056}
+{"iteration": 2, "total_s": 405.87206129799597, "decode_s": 400.47154574096203, "decode_tokens_per_s": 1.2685046051401385}
+{"iteration": 3, "total_s": 406.569065598771, "decode_s": 401.211974341888, "decode_tokens_per_s": 1.2661636054937728}
+{"iteration": 4, "total_s": 406.6192196011543, "decode_s": 401.25659903115593, "decode_tokens_per_s": 1.2660227924639214}
+{"iteration": 5, "total_s": 406.65144735225476, "decode_s": 401.27550234412774, "decode_tokens_per_s": 1.2659631525782677}
+/home/liushenyu/infinigen/speedup/results/compact_staging_v11_20261029/benchmark_v13/p1920-g128-b4-neural_serial.json
