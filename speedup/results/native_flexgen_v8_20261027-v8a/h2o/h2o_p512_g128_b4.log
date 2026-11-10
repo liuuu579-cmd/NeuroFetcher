@@ -1,0 +1,34 @@
+/home/liushenyu/anaconda3/envs/infinigen/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:293: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+/home/liushenyu/infinigen/speedup/flexgen/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  data_ptr = tensor.storage().data_ptr()
++++++++++++++++++++++++++++++++++++++++++++++++++
+FlexGen + H2O
+input: 512 output: 128 bsz: 4
++++++++++++++++++++++++++++++++++++++++++++++++++
+Total: 14.120670889271423 Prefill: 0.39139592298306525 Decode: 13.729274966288358
+=================================================
+{
+  "complete": true,
+  "method": "h2o",
+  "runtime": "original FlexGen method-specific runtime",
+  "gpu": 3,
+  "model": "OPT-13B",
+  "model_path": "/home/liushenyu/opt-13b",
+  "precision": "FP16",
+  "prompt_len": 512,
+  "generation_len": 128,
+  "batch_size": 4,
+  "elapsed_wall_s": 31.67871483997442,
+  "prefill_s": 0.39139592298306525,
+  "decode_s": 13.729274966288358,
+  "total_s": 14.120670889271423,
+  "decode_tokens_per_s": 37.00122557435641,
+  "end_to_end_tokens_per_s": 36.258900445658455,
+  "parameters": {
+    "heavy_ratio": 0.15,
+    "native_recent_policy": true,
+    "first_two_layers_full": true
+  },
+  "note": "Metrics use the native FlexGen generate timer after warmup."
+}

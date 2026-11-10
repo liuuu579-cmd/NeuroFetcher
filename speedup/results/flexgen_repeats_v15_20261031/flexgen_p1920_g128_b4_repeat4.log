@@ -1,0 +1,77 @@
+/home/liushenyu/anaconda3/envs/infinigen/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:293: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
++++++++++++++++++++++++++++++++++++++++++++++++++
+FlexGen
+input: 1920 output: 128 bsz: 4
++++++++++++++++++++++++++++++++++++++++++++++++++
+Total: 88.56276965816505 Prefill: 2.2749038070905954 Decode: 86.28786585107446
+=================================================
+{
+  "complete": true,
+  "method": "flexgen",
+  "gpu": 3,
+  "model": "OPT-13B",
+  "precision": "FP16",
+  "prompt_len": 1920,
+  "generation_len": 128,
+  "batch_size": 4,
+  "runtime": "native FlexGen, accepted v8 adapters where applicable",
+  "prefill_s": 2.2749038070905954,
+  "decode_s": 86.28786585107446,
+  "total_s": 88.56276965816505,
+  "decode_tokens_per_s": 5.887270417334982,
+  "parameters": {
+    "weights_gpu_percent": 100,
+    "kv_cpu_percent": 100,
+    "overlap": false,
+    "warmup_generated_tokens": 1,
+    "measured_runs": 1
+  },
+  "memory": {
+    "before_generation": {
+      "allocated_bytes": 26230259200,
+      "reserved_bytes": 29089595392,
+      "peak_allocated_bytes": 29008559104,
+      "peak_reserved_bytes": 29089595392
+    },
+    "prefill": {
+      "allocated_bytes": 26546930176,
+      "reserved_bytes": 30589059072,
+      "peak_allocated_bytes": 29324180480,
+      "peak_reserved_bytes": 30589059072
+    },
+    "decode": {
+      "allocated_bytes": 26546929664,
+      "reserved_bytes": 30589059072,
+      "peak_allocated_bytes": 26716135936,
+      "peak_reserved_bytes": 30589059072
+    },
+    "peak_allocated_bytes": 29324180480,
+    "peak_reserved_bytes": 30589059072,
+    "cpu_process_peak_rss_bytes": 17621700608,
+    "scope": "PyTorch allocator on the sole visible GPU; includes resident weights and buffers. Peaks reset after warmup and at the prefill/decode boundary. Reserved memory retains warmup allocator blocks; CUDA context/non-PyTorch memory is not included. Memory-run timing is supplementary; historical throughput is preserved."
+  },
+  "source_sha256": {
+    "/home/liushenyu/infinigen/speedup/run_native_memory_v9.py": "45e6480a62b004f45aaca910f6951a4d945f449618a965d2b8353eae390735db",
+    "/home/liushenyu/infinigen/speedup/flexgen/original/flex_opt.py": "84a189500b7a2c59f4e3949a9e31981c2e9442e8ca2c92bae84c3881c432489a",
+    "/home/liushenyu/infinigen/speedup/flexgen/original/pytorch_backend.py": "99a82e31a4744361fb5ea3defe9c0abe442a57033daf482d9e4adc6e4233c40d"
+  },
+  "prompt_sha256": "82245e4500844acfc1a9bc44d0ba90128f2ceff654bc607d2a7dc1312736cb5b",
+  "weights_root": "/home/liushenyu/opt-13b-flexgen-np",
+  "cpu_affinity": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "output_shape": [
+    4,
+    2048
+  ]
+}

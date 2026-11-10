@@ -1,0 +1,32 @@
+{
+  "source_sha256": {
+    "speedup/results/layerwise_paired_v17_20261102/summary.json": "1000ccecd1ec60bf552e4662a390247dad227c4a40d7114275a62a1b64de65ea",
+    "speedup/results/layerwise_paired_v17_20261102/pair01-1-bulk_v12.json": "84e487318c98d7368b5e9201f64b007c42e72804407beecb1a274dcd12c9a319",
+    "speedup/results/layerwise_paired_v17_20261102/pair01-2-layer_v16.json": "1abd9eeec7004f5e6dd8c8dc773d43cad6cb3eb91ca79ef5aa7a6f12b7266873",
+    "speedup/results/layerwise_paired_v17_20261102/pair02-1-layer_v16.json": "0416ed09ba013537351fad76fdcfe9a8bd936308b74ec2602d4ca80c3f94c322",
+    "speedup/results/layerwise_paired_v17_20261102/pair02-2-bulk_v12.json": "c274263b13f6673501ac4d5c15c62aa8ec3cfc27ed85c3457080708a2e79abe5",
+    "speedup/results/layerwise_paired_v17_20261102/pair03-1-bulk_v12.json": "86ba55632f980244f2e587b4258f7a0dec9c21ab68a35782168a203e4d1c8ea9",
+    "speedup/results/layerwise_paired_v17_20261102/pair03-2-layer_v16.json": "6962e2bda63225240310bdfa291c8b97fa5d13dc1f2f47211662afe55f5951b4",
+    "speedup/results/layerwise_paired_v17_20261102/pair04-1-layer_v16.json": "511ad15ef4067aa257dfb8fc1afd9f6baafc3fbc5d07dd8eca9ebb99d16054a4",
+    "speedup/results/layerwise_paired_v17_20261102/pair04-2-bulk_v12.json": "857e0dea458d83da90190e36942c7886939405e2413dcecc3d1168e19775b01f",
+    "speedup/results/layerwise_paired_v17_20261102/pair05-1-bulk_v12.json": "81c0c3d6df9ea79e6519bf64f2029e456f17d942e1b5fe1068998f6121b0c731",
+    "speedup/results/layerwise_paired_v17_20261102/pair05-2-layer_v16.json": "66aed8d696f5d5021d32e74f16113292d93d68ef8f805db195b669381331a283",
+    "speedup/results/layerwise_paired_v17_20261102/pair06-1-layer_v16.json": "20bb4005dfa02a962b4dd01b9f42b0f4e32a51fa4b54ef6a3b3dae62f0a5d85f",
+    "speedup/results/layerwise_paired_v17_20261102/pair06-2-bulk_v12.json": "6767ede204c8d26561a03f27d729a00aa0782712f57321b39b5d0ad86a8dbbc6",
+    "speedup/results/reviewer_memory_v9_20261029/infinigen/infinigen_p1920_g128_b4.json": "b1d8fb27235dc12ece86729d0235eeeaa5fcf5f8a9fc620f43ed42344e46c875",
+    "speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat1.json": "5b076ee8245da00b9e8ec5ee44a403096fb364c29425675c1c2225ba5b54470b",
+    "speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat2.json": "863332eaa55162dc858417a5ae33c91b0c0f8d8899832916d951d9b0c91cc013",
+    "speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat3.json": "33f4af08fff6b56c207cafb1ecabb3b22e3afa52679581f110d447568aef8fcc",
+    "speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat4.json": "05992aeeec5a4525cad13436c50c87f3d20725e3765c9e537642913f966cb48d",
+    "speedup/results/flexgen_repeats_v15_20261031/flexgen_p1920_g128_b4_repeat5.json": "d8d44b3f823734ac528713f893801cc3221c16ef8e5932cb82f4d82d3db4a1d5",
+    "speedup/results/reviewer_throughput_20261026/p1920-g128-b4-full_gpu.json": "e9bcb3e329d06eccdeb64a7989c12d69410ca969b9dfc55b7348ea36bbfd01df",
+    "speedup/results/layerwise_v16_20261031/p1920-g128-b4-neural_async.json": "8ee89b1ead01169c06ec458849409d3a5f1b7cc0cfa9bfbbdb8243580352f102",
+    "speedup/results/compact_staging_v11_20261029/benchmark_v13/p1920-g128-b4-neural_async.json": "2814a85917c27a452bca52cc757828366ead2b906089878823e1ddb97e946364",
+    "speedup/results/reviewer_throughput_20261026/p1920-g128-b4-neural_async.json": "21cc21842ee0833200151b06fe7b7a48f74ad35c886de2ba63cb199d830630c1",
+    "speedup/results/reviewer_components_20261026/components.json": "9cbd243cd702ecb96e160be04725014c12a5f0af48bab359a84b5b1e9c6f1bd9",
+    "speedup/results/native_flexgen_v8_20261027-v8a/infinigen/infinigen_p1920_g128_b4.json": "8a289787dc81bd27f2ec6fd16255c853759c68f5d6e744f9023018d5f9a8574f"
+  },
+  "generator": "speedup/summarize_memory_throughput_v18.py",
+  "generator_sha256": "7d66e19307b5535e70e61d57cfa79c11286cee42775df10006edea505929ffb7",
+  "no_gpu_work_performed": true
+}

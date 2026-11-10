@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "method": "quest_native",
+  "runtime": "Transformers OPT cached-decode adaptation; full GPU KV, not official Quest paging runtime",
+  "gpu": 3,
+  "model": "OPT-13B",
+  "precision": "FP16",
+  "prompt_len": 1920,
+  "generation_len": 128,
+  "batch_size": 4,
+  "prefill_s": 1.7624389410484582,
+  "decode_s": 10.024454139871523,
+  "total_s": 11.78708395990543,
+  "decode_tokens_per_s": 50.676076014899174,
+  "end_to_end_tokens_per_s": 43.43737617731433,
+  "selection_density": 0.32825735063579503,
+  "parameters": {
+    "page_size": 16,
+    "minimum_pages": 3,
+    "first_two_layers_full": true,
+    "recent_union": false
+  },
+  "note": "Prefill is full causal. Decode applies Quest page bounds independently per head."
+}

@@ -1,0 +1,24 @@
+{
+  "gpu": 2,
+  "cpu_cores": "20-29",
+  "output_dir": "/home/liushenyu/infinigen/speedup/results/reviewer_throughput_20261026",
+  "contexts": [
+    512,
+    1024,
+    1536,
+    1920
+  ],
+  "batch": 4,
+  "gen_len": 128,
+  "repeats": 5,
+  "start_utc": "2026-10-26T09:23:49.003115+00:00",
+  "strategies": [
+    "full_gpu",
+    "full_offload",
+    "neural_serial",
+    "neural_async"
+  ],
+  "generation_policy": "greedy, exactly gen_len tokens including first prefill output; EOS does not shorten runs",
+  "repetitions": "one complete warmup + measured repetitions in a fresh process per method/context",
+  "scope": "first backend/scheduling ablation only; other algorithmic baselines remain to integrate"
+}

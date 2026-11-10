@@ -1,0 +1,57 @@
+{
+  "protocol": "balanced adjacent A/B, B/A pairs in one common-model process",
+  "initial_gpu_state": {
+    "timestamp_utc": "2026-11-02T01:31:33.955930+00:00",
+    "gpu": "3, GPU-ba7178a1-5589-6027-eb47-28727d296893, 2 MiB, 0 %, 40, 210 MHz, 405 MHz, 34.90 W",
+    "compute_processes": [
+      "GPU-38c83f4f-d558-ec8d-327c-444fffe1352c, 2717768, 19338 MiB",
+      "GPU-87c74231-f0a4-917d-e639-161adb00b528, 1281637, 8476 MiB"
+    ],
+    "load_average": [
+      3.93115234375,
+      4.09765625,
+      4.19970703125
+    ]
+  },
+  "model_path": "/home/liushenyu/opt-13b",
+  "predictor_path": "/home/liushenyu/test/predictor_topk_0.3_iwl_epoch_20.pth",
+  "embedding_path": "/home/liushenyu/test/opt_13b_embed_weights.pth",
+  "predictor_sha256": "05164ad4447ebdc004ff628670b5816c65ac893492168f0a8cf263408b62c8a2",
+  "embedding_sha256": "35ef78c9d4111b430759f14b8cecf5e52f936876ad87b09cb2d6839b4046985c",
+  "model_config_sha256": "2c94ede930d5788e00573e671da80cc836bf7006c03c69696fd0f9a9dbc5e14f",
+  "prompt_sha256": "b0a033d7819999458d797d9aed517a89a4917d0491cef6662f6c03f58c860907",
+  "seed": 20261026,
+  "predictor_config": {
+    "encoder_layers": 1,
+    "heads": 4,
+    "ffn": 2048,
+    "dtype": "float32"
+  },
+  "batch": 4,
+  "prompt_len": 1920,
+  "gen_len": 128,
+  "budget": 0.3,
+  "recent": 20,
+  "strategy": "neural_async",
+  "pairs": 6,
+  "cpu_affinity": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "cpu_threads": 10,
+  "torch_version": "2.0.1+cu117",
+  "allocator": "backend:cudaMallocAsync",
+  "source_sha256": {
+    "benchmark_layerwise_paired_v17.py": "b97e80d47360d02f71ebd327be408b0d514ee852a496c8f9402e7fb70a11dc9b",
+    "reviewer_offload_backend_v12.py": "6dc4e6b0ddb64bb36f39330424ca06e96a466e17cdd6e3bb740e4c3551a2174d",
+    "reviewer_offload_backend_v16.py": "7da4c3d7d7fe6ffda28e5ed760820616715641df2a25f739d0d71e91211f9df9"
+  }
+}

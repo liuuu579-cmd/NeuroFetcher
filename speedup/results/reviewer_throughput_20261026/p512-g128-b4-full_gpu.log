@@ -1,0 +1,7 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:06<00:12,  6.46s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:12<00:06,  6.22s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:16<00:00,  5.06s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:16<00:00,  5.40s/it]
+{"iteration": 1, "total_s": 5.091339951846749, "decode_s": 4.707876174012199, "decode_tokens_per_s": 107.90428236073731}
+{"iteration": 2, "total_s": 5.095412401948124, "decode_s": 4.708786420058459, "decode_tokens_per_s": 107.88342360061709}
+{"iteration": 3, "total_s": 5.101338822860271, "decode_s": 4.713297136826441, "decode_tokens_per_s": 107.78017707197785}
+{"iteration": 4, "total_s": 5.106651863781735, "decode_s": 4.711568251950666, "decode_tokens_per_s": 107.81972643390652}
+{"iteration": 5, "total_s": 5.108397087082267, "decode_s": 4.712944970000535, "decode_tokens_per_s": 107.78823076305564}
+/home/liushenyu/infinigen/speedup/results/reviewer_throughput_20261026/p512-g128-b4-full_gpu.json

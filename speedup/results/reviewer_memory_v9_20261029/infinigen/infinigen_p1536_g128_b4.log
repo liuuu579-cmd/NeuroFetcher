@@ -1,0 +1,83 @@
+/home/liushenyu/anaconda3/envs/infinigen/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:293: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+/home/liushenyu/infinigen/speedup/flexgen/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  data_ptr = tensor.storage().data_ptr()
++++++++++++++++++++++++++++++++++++++++++++++++++
+FlexGen
+input: 1536 output: 128 bsz: 4
++++++++++++++++++++++++++++++++++++++++++++++++++
+Total: 46.37336219311692 Prefill: 1.4068990950472653 Decode: 44.96646309806965
+=================================================
+{
+  "complete": true,
+  "method": "infinigen",
+  "gpu": 2,
+  "model": "OPT-13B",
+  "precision": "FP16",
+  "prompt_len": 1536,
+  "generation_len": 128,
+  "batch_size": 4,
+  "runtime": "native FlexGen, accepted v8 adapters where applicable",
+  "prefill_s": 1.4068990950472653,
+  "decode_s": 44.96646309806965,
+  "total_s": 46.37336219311692,
+  "decode_tokens_per_s": 11.2973083716208,
+  "parameters": {
+    "weights_gpu_percent": 100,
+    "kv_cpu_percent": 100,
+    "overlap": false,
+    "warmup_generated_tokens": 1,
+    "measured_runs": 1,
+    "effective_max_num_kv": 1665,
+    "alpha": 7,
+    "partial_weight_ratio": 0.3,
+    "historical_nominal_max_num_kv": 500
+  },
+  "memory": {
+    "before_generation": {
+      "allocated_bytes": 26232925184,
+      "reserved_bytes": 27940356096,
+      "peak_allocated_bytes": 26914500096,
+      "peak_reserved_bytes": 27940356096
+    },
+    "prefill": {
+      "allocated_bytes": 26484584448,
+      "reserved_bytes": 27940356096,
+      "peak_allocated_bytes": 27166158336,
+      "peak_reserved_bytes": 27940356096
+    },
+    "decode": {
+      "allocated_bytes": 26484583936,
+      "reserved_bytes": 28347203584,
+      "peak_allocated_bytes": 26759573504,
+      "peak_reserved_bytes": 28347203584
+    },
+    "peak_allocated_bytes": 27166158336,
+    "peak_reserved_bytes": 28347203584,
+    "cpu_process_peak_rss_bytes": 27034152960,
+    "scope": "PyTorch allocator on the sole visible GPU; includes resident weights and buffers. Peaks reset after warmup and at the prefill/decode boundary. Reserved memory retains warmup allocator blocks; CUDA context/non-PyTorch memory is not included. Memory-run timing is supplementary; historical throughput is preserved."
+  },
+  "source_sha256": {
+    "/home/liushenyu/infinigen/speedup/run_native_memory_v9.py": "45e6480a62b004f45aaca910f6951a4d945f449618a965d2b8353eae390735db",
+    "/home/liushenyu/infinigen/speedup/flexgen/infinigen/flex_opt_v7.py": "36a05f3c9cdf7e916e4f833e9d176c3cb73a8e8b4a9c164169dc7e3049a98d3d",
+    "/home/liushenyu/infinigen/speedup/flexgen/infinigen/pytorch_backend_v7.py": "39308d951ad17956ab65aab034960963e51412ba3e51f125750ea01f505b7ec7"
+  },
+  "prompt_sha256": "82245e4500844acfc1a9bc44d0ba90128f2ceff654bc607d2a7dc1312736cb5b",
+  "weights_root": "/home/liushenyu/opt-13b-flexgen-np",
+  "cpu_affinity": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "output_shape": [
+    4,
+    1664
+  ]
+}

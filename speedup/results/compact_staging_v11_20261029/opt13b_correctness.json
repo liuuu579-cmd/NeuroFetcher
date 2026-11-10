@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "real": true,
+  "checks": {
+    "original_neural_serial": {
+      "peak_allocated_bytes": 34434681344,
+      "gpu_staging_bytes": 6317670400,
+      "actual_history_selection_ratio": 0.3004954126736498
+    },
+    "original_neural_async": {
+      "peak_allocated_bytes": 40802509312,
+      "gpu_staging_bytes": 12635340800,
+      "actual_history_selection_ratio": 0.3004954126736498
+    },
+    "compact_neural_serial": {
+      "peak_allocated_bytes": 30095804928,
+      "gpu_staging_bytes": 1962803200,
+      "actual_history_selection_ratio": 0.3004954126736498,
+      "staging_growths": []
+    },
+    "compact_neural_async": {
+      "peak_allocated_bytes": 32066921984,
+      "gpu_staging_bytes": 3925606400,
+      "actual_history_selection_ratio": 0.3004954126736498,
+      "staging_growths": []
+    },
+    "all_logits_bitwise_equal": true,
+    "all_index_hashes_equal": true
+  }
+}

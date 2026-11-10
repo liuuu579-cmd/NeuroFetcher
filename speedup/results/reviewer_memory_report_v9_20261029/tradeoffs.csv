@@ -1,0 +1,49 @@
+prompt_len,method,baseline,extra_peak_allocated_gib,extra_peak_allocated_percent,decode_throughput_ratio,throughput_basis,matched_runtime
+512,neural_serial,full_offload,1.2607226371765137,4.822567868098537,1.5782853925130444,historical neural / historical baseline,True
+512,neural_serial,flexgen,2.640783119201661,10.664624065082574,2.068207116557253,historical neural / new supplementary baseline,False
+512,neural_serial,infinigen,2.682125854492188,10.849698545522447,1.482671355956878,historical neural / historical baseline,False
+512,neural_serial,h2o,2.640783119201661,10.664624065082574,0.9445228554390449,historical neural / historical baseline,False
+512,neural_serial,quest_native,-2.2308818817138665,-7.528179836426762,0.4435804148521799,historical neural / historical baseline,False
+512,neural_serial,quest_capped,-2.2318775177001946,-7.531286604325826,0.464059922044472,historical neural / historical baseline,False
+512,neural_async,full_offload,3.2215046882629395,12.323031679148343,2.1594885940703263,historical neural / historical baseline,True
+512,neural_async,flexgen,4.601565170288087,18.58310979620914,2.8298238706175893,historical neural / new supplementary baseline,False
+512,neural_async,infinigen,4.642907905578614,18.78142707799533,2.0286647124355235,historical neural / historical baseline,False
+512,neural_async,h2o,4.601565170288087,18.58310979620914,1.2923431610246592,historical neural / historical baseline,False
+512,neural_async,quest_native,-0.2700998306274407,-0.9114602236088176,0.606928791820741,historical neural / historical baseline,False
+512,neural_async,quest_capped,-0.2710954666137688,-0.9147892928755175,0.6349498724210738,historical neural / historical baseline,False
+1024,neural_serial,full_offload,1.3389554023742676,4.791366392169372,1.7924508508130772,historical neural / historical baseline,True
+1024,neural_serial,flexgen,3.873841094970704,15.245171233021315,2.3992244118059096,historical neural / new supplementary baseline,False
+1024,neural_serial,infinigen,4.273952293395997,17.088856460625436,1.6400429904520601,historical neural / historical baseline,False
+1024,neural_serial,h2o,3.873993682861329,15.245863280545935,0.8147084896062313,historical neural / historical baseline,False
+1024,neural_serial,quest_native,-5.255401802062988,-15.215616672880316,0.3363800028304065,historical neural / historical baseline,False
+1024,neural_serial,quest_capped,-5.256962966918945,-15.219448700541594,0.3511810945978536,historical neural / historical baseline,False
+1024,neural_async,full_offload,4.862245273590087,17.39923417393403,1.7773418518227033,historical neural / historical baseline,True
+1024,neural_async,flexgen,7.397130966186523,29.11077802313695,2.3790007726477076,historical neural / new supplementary baseline,False
+1024,neural_async,infinigen,7.797242164611816,31.17628438335074,1.6262186739439286,historical neural / historical baseline,False
+1024,neural_async,h2o,7.397283554077148,29.111553333662975,0.8078411159533773,historical neural / historical baseline,False
+1024,neural_async,quest_native,-1.732111930847168,-5.014868922857141,0.3335445749463776,historical neural / historical baseline,False
+1024,neural_async,quest_capped,-1.733673095703125,-5.019161997069799,0.34822090475426015,historical neural / historical baseline,False
+1536,neural_serial,full_offload,1.4130663871765137,4.749577037512398,1.8366981698307496,historical neural / historical baseline,True
+1536,neural_serial,flexgen,4.790448188781738,18.163502361772863,2.3622554368492024,historical neural / new supplementary baseline,False
+1536,neural_serial,infinigen,5.864025115966797,23.177546659794302,1.7215378140948732,historical neural / historical baseline,False
+1536,neural_serial,h2o,4.790600776672363,18.164186004793304,0.8054407958000543,historical neural / historical baseline,False
+1536,neural_serial,quest_native,-8.279417037963867,-20.990361793567548,0.2953269078321622,historical neural / historical baseline,False
+1536,neural_serial,quest_capped,-8.280855178833008,-20.99324241264511,0.3074454041577729,historical neural / historical baseline,False
+1536,neural_async,full_offload,6.498893451690677,21.84398085433614,1.8379561865463108,historical neural / historical baseline,True
+1536,neural_async,flexgen,9.876275253295901,37.446965674078015,2.3638734255175615,historical neural / new supplementary baseline,False
+1536,neural_async,infinigen,10.94985218048096,43.27926719480048,1.7227169535866937,historical neural / historical baseline,False
+1536,neural_async,h2o,9.876427841186526,37.447760882893654,0.8059924694507145,historical neural / historical baseline,False
+1536,neural_async,quest_native,-3.193589973449704,-8.096537311219276,0.29552918722281574,historical neural / historical baseline,False
+1536,neural_async,quest_capped,-3.195028114318845,-8.09988802733348,0.3076559839165519,historical neural / historical baseline,False
+1920,neural_serial,full_offload,1.4631457328796387,4.702845666717836,1.8822657412631618,historical neural / historical baseline,True
+1920,neural_serial,flexgen,5.264797687530518,19.27772022769927,2.4025662681413023,historical neural / new supplementary baseline,False
+1920,neural_serial,infinigen,7.057417392730713,27.657001964742413,1.9688608829336083,historical neural / historical baseline,False
+1920,neural_serial,h2o,5.266903400421143,19.286917646419543,1.035640710888318,historical neural / historical baseline,False
+1920,neural_serial,quest_native,-10.627859115600586,-24.59985836909544,0.280993798034606,historical neural / historical baseline,False
+1920,neural_serial,quest_capped,-10.630859851837158,-24.605095056362803,0.2907760822544094,historical neural / historical baseline,False
+1920,neural_async,full_offload,7.720905399322511,24.816548129405767,2.186455764115436,historical neural / historical baseline,True
+1920,neural_async,flexgen,11.52255735397339,42.191295878970124,2.790841245467061,historical neural / new supplementary baseline,False
+1920,neural_async,infinigen,13.315177059173585,52.18026051084499,2.2870454112088794,historical neural / historical baseline,False
+1920,neural_async,h2o,11.524663066864015,42.20226014693298,1.2030089865816587,historical neural / historical baseline,False
+1920,neural_async,quest_native,-4.370099449157713,-10.115285340049097,0.32640476630103826,historical neural / historical baseline,False
+1920,neural_async,quest_capped,-4.373100185394286,-10.121528009235236,0.33776795017551664,historical neural / historical baseline,False

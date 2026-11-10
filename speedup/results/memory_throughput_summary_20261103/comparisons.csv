@@ -1,0 +1,5 @@
+reference_method,reference_run_set,v16_decode_throughput_ratio,v16_allocated_delta_gib,v16_allocated_delta_percent,reference_total_time_divided_by_v16,comparison_type
+InfiniGen,memory_v9_20261029,1.6668510602594355,0.5503350682556629,2.156683842972229,1.479522431314325,cross-runtime/date observation; not an isolated causal speedup
+FlexGen CPU-KV,repeats_v15_20261031,2.73288335843094,-1.2422846369445324,-4.548781756781772,2.4141929025246998,cross-runtime/date observation; not an isolated causal speedup
+Full GPU,original_20261026,0.20482508846279598,-5.043936591595411,-16.212230135339045,0.21646909864137973,cross-runtime/date observation; not an isolated causal speedup
+Neuro-Fetcher V12,paired_v17_20261102,1.0301082044129386,-3.778975219776232,-12.661172146365274,1.025384459308126,controlled staging implementation comparison

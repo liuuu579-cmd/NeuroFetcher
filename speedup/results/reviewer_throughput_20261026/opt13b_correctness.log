@@ -1,0 +1,28 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:08<00:16,  8.42s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:14<00:07,  7.31s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:18<00:00,  5.76s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:18<00:00,  6.29s/it]
+/home/liushenyu/anaconda3/envs/infinigen/lib/python3.9/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+{
+  "complete": true,
+  "prompt_len": 512,
+  "gen_len": 8,
+  "serial_async_max_logit_abs_diff": 0.0,
+  "serial_indices": [
+    "d740b7f17c527bcb5c8e1a126d52d28216d4f33fcf805af73c87b67154a05934",
+    "5191f03ce43b29a25f3eb1b67b0f26932b441ac9bec5a6082c30a32a2d612a00",
+    "b37c90bedf5abfc9d18f3592eb7ef54f97167b805bde3d1573c59fe7066437f2",
+    "e29d42e776f71115c1c7435f719ac88d16eea4cb3f97db005ac9c560b67eb85c",
+    "7ed928961f649b1113302785f6891f50295eddae9766750beeca16246c710d1e",
+    "4fc6473ef48397bf519359375b718dc10fb141d4b0b5946bd8b078012d29c744",
+    "769f58189641f4c419f4757cab752deda2650e4228267c1aba516fba77fcbf1b"
+  ],
+  "async_indices": [
+    "d740b7f17c527bcb5c8e1a126d52d28216d4f33fcf805af73c87b67154a05934",
+    "5191f03ce43b29a25f3eb1b67b0f26932b441ac9bec5a6082c30a32a2d612a00",
+    "b37c90bedf5abfc9d18f3592eb7ef54f97167b805bde3d1573c59fe7066437f2",
+    "e29d42e776f71115c1c7435f719ac88d16eea4cb3f97db005ac9c560b67eb85c",
+    "7ed928961f649b1113302785f6891f50295eddae9766750beeca16246c710d1e",
+    "4fc6473ef48397bf519359375b718dc10fb141d4b0b5946bd8b078012d29c744",
+    "769f58189641f4c419f4757cab752deda2650e4228267c1aba516fba77fcbf1b"
+  ]
+}
+/home/liushenyu/infinigen/speedup/results/reviewer_throughput_20261026/opt13b_correctness/smoke_metrics.json

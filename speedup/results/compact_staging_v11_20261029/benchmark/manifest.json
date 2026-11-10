@@ -1,0 +1,23 @@
+{
+  "start_utc": "2026-10-30T03:10:56.009308+00:00",
+  "model": "OPT-13B FP16",
+  "contexts": [
+    1920,
+    512,
+    1024,
+    1536
+  ],
+  "batch": 4,
+  "generation_len": 128,
+  "warmups": 1,
+  "repeats": 5,
+  "gpu2": {
+    "method": "neural_serial",
+    "cores": "20-29"
+  },
+  "gpu3": {
+    "method": "neural_async",
+    "cores": "30-39"
+  },
+  "change": "Only nominal-sized staging, dynamically grown to preserve ties; original predictor, selection and attention preserved"
+}
